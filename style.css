@@ -3,11 +3,32 @@ body{
     display: grid;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
+    background-image:linear-gradient(rgb(0, 0, 0, 0.5),rgb(0, 0, 0, 0.5)),url("https://wallpaperaccess.com/full/3296133.png");
+    --input-bg: black;
+    --letters: limegreen;
+    place-content: center;
+}
+marquee{
+    font-size: 2rem;
+    margin: 1rem auto;
+    background-color: var(--input-bg);
+    width: fit-content;
+    color: var(--letters);
+    border: 1px solid white ;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.container{
+    min-width: 1000px;
+    display: grid;
+    align-items: center;
 }
 .input{
     display: flex;
+   background-color: var(--input-bg);
 }
 main{
+
     min-height: 50vh;
     flex: 75%;
 }
@@ -16,37 +37,53 @@ main{
 }
 main, .read,
 .res{
+
+    color: var(--letters);
     margin: 1rem;
-    background-color: #eee;
+    background-color: var(--input-bg);
     padding: 1rem;
     text-transform: uppercase;
     font-size: 1.5rem;
     border-radius: 1rem;
-    outline: 2px solid #ccc;
+    border: 2px solid #ccc;
 
 }
 
 pre:focus-within{
-    outline-color: black;
+    border-color: black;
 }
 
 #send{
-    width: 4rem;
+    font-size: 1.5rem;
+    font-weight: bold;
     margin: auto;
     padding: .5rem;
     user-select: none;
     cursor: pointer;
+    transition: 200ms;
+    border: 2px solid black;
+    border-radius: .5rem;
+    background-color: var(--letters);
+}
+#send:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 0 var(--letters);
 }
 
 .initial{
     margin: 1rem auto;
     display: flex;
+    background-color: black;
+    color: var(--letters);
+    padding: 1rem;
 }
 input{
+    background: transparent;
     width: 3rem;
     border: none;
     font-size: 1rem;
     padding: .2rem;
+    color: var(--letters);
 }
 input:focus{
     outline: none;
