@@ -93,3 +93,8 @@ input:focus{
     min-height: 3rem;
     font-weight: 500;
 }
+@media (max-width: 600px){
+    .container{
+        min-width: 0px;
+    }
+}
