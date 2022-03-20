@@ -57,6 +57,7 @@ pre:focus-within{
     font-size: 1.5rem;
     font-weight: bold;
     margin: auto;
+    color: black;
     padding: .5rem;
     user-select: none;
     cursor: pointer;
