@@ -28,7 +28,6 @@ marquee{
    background-color: var(--input-bg);
 }
 main{
-
     min-height: 50vh;
     flex: 75%;
 }
@@ -98,4 +97,11 @@ input:focus{
     .container{
         min-width: 0px;
     }
+    main , .read{
+      min-height: 30vh;
+    }
+    main, .read,.res{
+font-size: 1rem;
+}
+    
 }
