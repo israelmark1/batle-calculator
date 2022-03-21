@@ -78,6 +78,7 @@ pre:focus-within{
     padding: 1rem;
 }
 input{
+    all:unset;
     background: transparent;
     width: 3rem;
     border: none;
