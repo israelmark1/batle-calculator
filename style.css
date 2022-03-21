@@ -103,5 +103,8 @@ input:focus{
     main, .read,.res{
 font-size: 1rem;
 }
+marquee{
+    font-size: 1rem;
+}
     
 }
